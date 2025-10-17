@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Szymon Walas">
+    <title>Version Control Systems</title>
+    
+    <style>
+      td{
+        border: 1px solid black;
+        width: 10%;
+        text-align: center;
+      }
+      table{
+        border-collapse: collapse;
+      }
+      a{
+        text-decoration: none;
+      }
+      body{
+        font-size: 18px;
+      }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <table style="border: 1px solid black;"><tr><td><a href="index.html">Home</a></td><td><a href="history.html">History</a></td><td><a href="trends.html">Trends</a></td></tr></table>
+    </nav>
+    <h2>History of Version Control Systems</h2>
+    <ul>
+        <li><i>1972: </i><b>Source Code Control System (SCCS)</b> – one of the first version control systems, developed
+at Bell Labs, which introduced the basic idea of tracking changes.</li>
+        <li><i>1982: </i><b>Revision Control System (RCS)</b> – released by Walter Tichy at Purdue University, RCS
+automated change tracking for individual files using delta storage (storing differences between
+file versions). RCS was a local VCS (no network support), handling one file at a time.</li>
+        <li><i>1986: </i><b>Concurrent Versions System (CVS)</b> – developed by Dick Grune as a front-end to RCS, CVS
+allowed collaboration on whole projects with a client-server model . It added networked
+repositories and concurrent multi-developer capabilities to RCS.</li>
+        <li><i>2000: </i><b>Subversion (SVN)</b> – created by CollabNet as a successor to CVS, Subversion improved on
+CVS’s weaknesses. SVN introduced atomic commits (all-or-nothing changesets), better handling
+of file renames, and more efficient network operations. By ~2006, SVN had become one of the
+most popular VCS tools, addressing many of CVS’s shortcomings. SVN was still
+centralized: a single repository stored the code, and developers committed to that central server.</li>
+        <li><i>2005: </i><b>Git and Mercurial</b> – a breakthrough year for version control. In 2005, after the Linux
+kernel’s commercial VCS (BitKeeper) license was revoked, Linus Torvalds created Git as a new
+distributed VCS for the kernel . Around the same time, Matt Mackall released Mercurial. Both
+Git and Mercurial are distributed version control systems (DVCS), meaning every user has a
+full copy of the repository.</li>
+        <li><i>2008: </i><b>GitHub launched</b> – GitHub provided a web-based collaboration platform on top of Git. It
+made sharing code and participating in projects easier with features like pull requests, issue
+tracking, and social networking for developers. GitHub greatly accelerated Git’s adoption across the industry.</li>
+        <li><i>2010s: </i><b>Wide adoption of Git and migration from older systems</b> – Throughout the 2010s, many
+teams and open-source projects migrated from CVS, SVN, or other tools to Git. Even companies
+that had used centralized systems (like Microsoft’s TFS or Perforce) moved toward Git-based
+workflows. Distributed version control became the new standard for most software
+development.</li>
+    </ul>
+
+    <h2>Centralized vs. Distributed Version Control</h2>
+   <p>Centralized systems are simple and good for a single source of truth, but suffer from
+single-point failures and require connectivity for most operations. Distributed systems add complexity
+in exchange for greater flexibility, offline work, and resilience – these have become dominant in modern
+development. Many projects that started on CVCS (like Subversion) eventually migrated to DVCS
+(like Git) to take advantage of these benefits.</p>
+
+</body>
+</html>
