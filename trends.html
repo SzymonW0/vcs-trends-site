@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Szymon Walas">
+    <title>Version Control Systems</title>
+    
+    <style>
+      td{
+        border: 1px solid black;
+        width: 10%;
+        text-align: center;
+      }
+      table{
+        border-collapse: collapse;
+      }
+      a{
+        text-decoration: none;
+      }
+      body{
+        font-size: 18px;
+      }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <table style="border: 1px solid black;"><tr><td><a href="index.html">Home</a></td><td><a href="history.html">History</a></td><td><a href="trends.html">Trends</a></td></tr></table>
+    </nav>
+    <h1>Modern Trends in Version Control</h1>
+    <p>Version control is not a static field – new practices and integrations have emerged in recent years that
+extend what VCS can do. Here are some modern trends and how they relate to version control.</p>
+    <h2>GitOps: Version Control Meets DevOps</h2>
+    <p>GitOps uses Git repositories as the single source of truth for both code and infrastructure. Every change is proposed via pull request, reviewed, and then automatically deployed, ensuring traceability and reliability.</p>
+    <h2>Integration with CI/CD Pipelines</h2>
+    <p>Modern software development emphasizes Continuous Integration (CI) and Continuous Delivery/
+Deployment (CD). Version control sits at the heart of CI/CD:</p>
+    <ul>
+        <li><b>Continuous Integration (CI)</b>: Developers frequently merge their code changes (at least daily)
+into the main branch. Each merge triggers an automated build and test process to catch
+integration issues early.</li>
+        <li><b>Continuous Delivery/Deployment (CD)</b>:After integration and testing, the pipeline can
+automatically deliver changes to staging or production environments. Version control ensures
+that deployments are based on known versions. Rollback is straightforward too – if a deployment fails, you can deploy a previous
+commit from Git.</li>
+    </ul>
+    <h2>Cloud-Based Version Control Platforms (GitHub, GitLab, Bitbucket)</h2>
+    <p>Another major trend is the use of cloud-based platforms for hosting repositories and facilitating
+collaboration. These platforms add a host of features on top of raw version control:</p>
+    <ul>
+        <li>Easy Collaboration</li>
+        <li>Issue Tracking and Project Management</li>
+        <li>Continuous Integration Services</li>
+        <li>Social Coding</li>
+        <li>Access Control and Integrations</li>
+    </ul>
+    <p>GitHub in particular has grown to host an enormous amount of code. As of January 2023, GitHub
+reported over 100 million developers using its platform and more than 400 million repositories .</p>
+    <h2>The Role of AI in Code Management and Review</h2>
+    <p>Artificial Intelligence is making inroads into software development, including the realm of version
+control and code review: - AI-assisted Code Reviews: For instance, when you open a pull request on GitHub, an AI-based
+reviewer bot could automatically analyze the changes and provide feedback. Modern AI models (often
+powered by machine learning on large codebases) can detect common bugs, security vulnerabilities, or
+deviations from best practices in the code changes.</p>
+</body>
+</html>
